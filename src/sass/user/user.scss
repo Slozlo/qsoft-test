@@ -1,0 +1,17 @@
+.user {
+  display: flex;
+  align-items: center;
+  padding: 0 19px;
+  border-left: 1px solid #ebebf1;
+  height: 100%;
+  color: #768298;
+  font-size: 14px;
+
+  // @include mobile() {
+  //   display: none;
+  // }
+
+  &__name {
+    margin-right: 10px;
+  }
+}

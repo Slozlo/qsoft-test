@@ -1,0 +1,36 @@
+// BreakPoints Variables
+$mobileBreakPoint: 375px;
+$tabletBreakPoint: 768px;
+$laptopBreakPoint: 1040px;
+$desktopBreakPoint: 1467px;
+
+// Media Queries Mixins
+@mixin media($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @include media($mobileBreakPoint) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @include media($tabletBreakPoint) {
+    @content;
+  }
+}
+
+@mixin laptop() {
+  @include media($laptopBreakPoint) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @include media($desktopBreakPoint) {
+    @content;
+  }
+}

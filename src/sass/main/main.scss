@@ -1,0 +1,19 @@
+.main {
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    h1 {
+      font-size: 36px;
+
+      @include mobile() {
+        font-size: 28px;
+      }
+    }
+  }
+}
